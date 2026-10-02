@@ -1,11 +1,25 @@
 import os
 os.system('cls')
 
-pessoas = [
-    { 'nome': 'Maria', 'idade': 45, 'conceito': 'A' },
-    { 'idade': 54, 'nome': 'Joca',  'conceito': 'I'},
-    { 'nome': 'Mariana', 'idade': 27, 'conceito': 'A'}
-]
+# Dicionário de dicionários
+pessoas = {
+    'p1': { 'nome': 'Maria', 'idade': 45, 'conceito': 'A' },
+    'p2': { 'idade': 54, 'nome': 'Joca',  'conceito': 'I'},
+    'p3': { 'nome': 'Mariana', 'idade': 27, 'conceito': 'A'}
+}
+
+print(pessoas)
+
+pessoas['p3']['idade'] = 26
+print()
+print(pessoas)
+
+del pessoas['p1']
+print()
+print(pessoas)
+
+
+"""
 
 contador = 1
 
@@ -18,3 +32,4 @@ for pessoa in pessoas:
         ''' 
     )
     contador = contador + 1
+"""
